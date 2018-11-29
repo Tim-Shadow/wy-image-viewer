@@ -1,0 +1,22 @@
+{
+  "name": "image-shower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "^5.2.11",
+    "@angular/core": "^5.2.11",
+    "@angular/forms": "^5.2.11",
+    "@angular/platform-browser": "^5.2.11",
+    "ionic-angular": "^3.9.2",
+    "rxjs": "^5.5.12",
+    "typescript": "^2.3.4",
+    "zone.js": "^0.8.26"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
