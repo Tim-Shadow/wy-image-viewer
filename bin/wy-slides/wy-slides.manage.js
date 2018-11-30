@@ -66,4 +66,3 @@ var WYSlidesManage = (function () {
     return WYSlidesManage;
 }());
 export { WYSlidesManage };
-//# sourceMappingURL=wy-slides.manage.js.map

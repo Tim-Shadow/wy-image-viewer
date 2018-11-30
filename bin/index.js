@@ -15,4 +15,3 @@ export * from "./wy-slides/wy-slides";
 export * from "./wy-slides/wy-slides.gesture";
 export * from "./wy-slides/wy-slides.manage";
 export * from "./wy-slides/wy-slide";
-//# sourceMappingURL=index.js.map

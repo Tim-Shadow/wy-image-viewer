@@ -30,4 +30,3 @@ var WYImageViewerImpl = (function (_super) {
     return WYImageViewerImpl;
 }(ViewController));
 export { WYImageViewerImpl };
-//# sourceMappingURL=wy-image-viewer-impl.js.map

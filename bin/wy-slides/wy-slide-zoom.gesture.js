@@ -142,4 +142,3 @@ function boundAdjustment(adjustement, bound) {
     }
     return adjustement;
 }
-//# sourceMappingURL=wy-slide-zoom.gesture.js.map

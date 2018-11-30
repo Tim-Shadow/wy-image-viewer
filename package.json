@@ -2,7 +2,7 @@
   "name": "image-shower",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "bin/index.js",
   "dependencies": {},
   "devDependencies": {
     "@angular/common": "^5.2.11",

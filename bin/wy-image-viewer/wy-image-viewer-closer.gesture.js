@@ -81,4 +81,3 @@ export { WYImageViewerCloserGesture };
 function isPinching(ev) {
     return ev.touches && ev.touches.length > 1;
 }
-//# sourceMappingURL=wy-image-viewer-closer.gesture.js.map

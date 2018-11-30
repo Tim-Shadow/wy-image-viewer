@@ -74,4 +74,3 @@ var WYSlidesGesture = (function (_super) {
     return WYSlidesGesture;
 }(PanGesture));
 export { WYSlidesGesture };
-//# sourceMappingURL=wy-slides.gesture.js.map

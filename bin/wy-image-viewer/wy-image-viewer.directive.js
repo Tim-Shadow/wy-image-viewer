@@ -47,4 +47,3 @@ WYImageViewerDirective = __decorate([
         WYImageViewerController])
 ], WYImageViewerDirective);
 export { WYImageViewerDirective };
-//# sourceMappingURL=wy-image-viewer.directive.js.map

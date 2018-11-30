@@ -81,4 +81,3 @@ WYImageViewerComponent = __decorate([
         Config])
 ], WYImageViewerComponent);
 export { WYImageViewerComponent };
-//# sourceMappingURL=wy-image-viewer.component.js.map

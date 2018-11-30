@@ -85,4 +85,3 @@ WYSlides = __decorate([
         ElementRef, Renderer])
 ], WYSlides);
 export { WYSlides };
-//# sourceMappingURL=wy-slides.js.map

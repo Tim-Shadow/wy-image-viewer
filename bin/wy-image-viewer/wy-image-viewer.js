@@ -24,4 +24,3 @@ var WYImageViewer = (function (_super) {
     return WYImageViewer;
 }(OverlayProxy));
 export { WYImageViewer };
-//# sourceMappingURL=wy-image-viewer.js.map
