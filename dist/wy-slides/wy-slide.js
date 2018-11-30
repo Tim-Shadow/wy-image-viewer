@@ -36,3 +36,4 @@ WYSlide = __decorate([
     __metadata("design:paramtypes", [NgZone, Platform, Renderer])
 ], WYSlide);
 export { WYSlide };
+//# sourceMappingURL=wy-slide.js.map

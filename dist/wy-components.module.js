@@ -42,3 +42,4 @@ WYComponentsModule = __decorate([
     })
 ], WYComponentsModule);
 export { WYComponentsModule };
+//# sourceMappingURL=wy-components.module.js.map

@@ -31,3 +31,4 @@ SafeResPipe = __decorate([
     __metadata("design:paramtypes", [DomSanitizer])
 ], SafeResPipe);
 export { SafeResPipe };
+//# sourceMappingURL=safe-res.js.map

@@ -41,3 +41,4 @@ WYImageViewerController = __decorate([
         DeepLinker])
 ], WYImageViewerController);
 export { WYImageViewerController };
+//# sourceMappingURL=wy-image-viewer.controller.js.map
