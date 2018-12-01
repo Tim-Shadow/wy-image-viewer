@@ -1,6 +1,6 @@
 {
   "name": "image-shower",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Ionic Component libray",
   "keywords": ["ionic","Anguar","Typescript","Image","Viewer","wechat"],
   "main": "bin/index.js",
