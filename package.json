@@ -1,8 +1,10 @@
 {
   "name": "image-shower",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Ionic Component libray",
+  "keywords": ["ionic","Anguar","Typescript","Image","Viewer","wechat"],
   "main": "bin/index.js",
+  "repository": "https://github.com/Tim-Shadow/wy-image-viewer",
   "dependencies": {},
   "devDependencies": {
     "@angular/common": "^5.2.11",
@@ -15,8 +17,8 @@
     "zone.js": "^0.8.26"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": ""
   },
-  "author": "",
-  "license": "ISC"
+  "author": "xuting90",
+  "license": "MIT"
 }
