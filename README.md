@@ -9,6 +9,9 @@
 5. 支持上下拖动某图片关闭Viewer
 6. 支持对放大的图片进行拖动
 
+## 示例图片
+![](./md-src/demo.gif)
+
 ## 安装方式
 `npm install image-shower@latest`
 
