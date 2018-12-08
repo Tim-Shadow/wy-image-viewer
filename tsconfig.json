@@ -20,6 +20,7 @@
     "src/**/__tests__/*.ts"
   ],
   "include": [
-    "components/**/*.ts"
+    "components/**/*.ts",
+    "index.ts"
   ]
 }

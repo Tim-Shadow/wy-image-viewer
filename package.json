@@ -2,6 +2,7 @@
   "name": "image-shower",
   "version": "1.0.1",
   "description": "An Ionic Component libray",
+  "main": "bin/index.js",
   "keywords": [
     "ionic",
     "Anguar",
