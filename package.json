@@ -2,8 +2,14 @@
   "name": "image-shower",
   "version": "1.0.1",
   "description": "An Ionic Component libray",
-  "keywords": ["ionic","Anguar","Typescript","Image","Viewer","wechat"],
-  "main": "bin/index.js",
+  "keywords": [
+    "ionic",
+    "Anguar",
+    "Typescript",
+    "Image",
+    "Viewer",
+    "wechat"
+  ],
   "repository": "https://github.com/Tim-Shadow/wy-image-viewer",
   "dependencies": {},
   "devDependencies": {
@@ -11,6 +17,7 @@
     "@angular/core": "^5.2.11",
     "@angular/forms": "^5.2.11",
     "@angular/platform-browser": "^5.2.11",
+    "gulp": "^3.9.1",
     "ionic-angular": "^3.9.2",
     "rxjs": "^5.5.12",
     "typescript": "^2.3.4",
