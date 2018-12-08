@@ -9,42 +9,11 @@
 5. 支持上下拖动某图片关闭Viewer
 6. 支持对放大的图片进行拖动
 
+## 安装方式
+`npm install image-shower@latest`
+
 ## 使用方式
-1. 在`app.module.ts`中引入
-
-	```
-	import {WYComponentsModule} from "image-shower";
-	```
-2. 在`app.module.ts`中的`@NgModule`中引入
-
-	```
-	@NgModule({
-		...
-		imports:[
-		...
-		WYComponentsModule,
-		...
-		]
-		...
-	})
-	export class AppModule {
-	}
-	```
-3. 在对应的页面的图片标签中使用
-
-	```
-	<ion-content>
-    	<img style="width: 100px;height: 100px"
-	         [wyImageViewer]="imageArr"
-	         (close)="actionClose()"
-	         *ngFor="let img of imageArr"
-	         [src]="img | safeRes"/>
-	</ion-content>
-	```
-	其中：  
-	* wyImageViewer：属性传入的为图片数组
-	* close：为对应图片Viewer关闭时触发的事件
-	* src：当前被展示的图片
+具体请求查看`demo/src`中的示例
 
 ## 后续将实现
 1. 无需借助wyImageViewer属性来展示图片，而是可以直接根据图片数组来展示图片
