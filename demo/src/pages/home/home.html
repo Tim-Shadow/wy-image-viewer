@@ -1,0 +1,15 @@
+<ion-content>
+  <div class="shower-container">
+    <img *ngFor="let img of srcList" [wyImageViewer]="srcList" [src]="img">
+  </div>
+
+  <button ion-button round (click)="actionShow($event)">直接展示</button>
+
+  <div class="pic-list">
+    <wy-slides [zoom-able]="true">
+      <wy-slide *ngFor="let img of srcList">
+        <img [src]="img">
+      </wy-slide>
+    </wy-slides>
+  </div>
+</ion-content>
