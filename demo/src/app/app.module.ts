@@ -6,8 +6,8 @@ import {StatusBar} from '@ionic-native/status-bar';
 
 import {MyApp} from './app.component';
 import {HomePage} from '../pages/home/home';
-import {WYImageViewerModule} from "image-shower/bin/components/wy-image-viewer/wy-image-viewer.module";
-import {WYSlidesModule} from "image-shower/bin/components/wy-slides/wy-slides.module";
+import {WYImageViewerModule, WYSlidesModule} from "image-shower";
+
 
 @NgModule({
   declarations: [

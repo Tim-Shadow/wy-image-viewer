@@ -4,7 +4,7 @@ import {WYImageViewerEnter, WYImageViewerLeave} from "./wy-image-viewer-transiti
 
 export class WYImageViewerImpl extends ViewController {
     constructor(
-        private app: App,
+        public app: App,
         component: WYImageViewerComponent,
         opts: any = {},
         config: Config) {

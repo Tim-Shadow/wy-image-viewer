@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import {WYImageViewerController} from "image-shower/bin/components/wy-image-viewer/wy-image-viewer.controller";
+import {WYImageViewerController} from "image-shower";
 
 @Component({
   selector: 'page-home',
