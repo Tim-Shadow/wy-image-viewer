@@ -1,14 +1,13 @@
 import {
     AfterViewInit,
     Component,
-    ContentChild, ContentChildren,
-    ElementRef, Input,
+    ContentChildren,
+    ElementRef, forwardRef, Input,
     NgZone,
     OnDestroy, QueryList,
     Renderer,
-    ViewChildren
 } from "@angular/core";
-import {Config, DomController, GestureController, Ion, Platform} from "ionic-angular";
+import {Config, DomController, GestureController, Ion, Platform, RootNode} from "ionic-angular";
 import {WYSlidesGesture} from "./wy-slides.gesture";
 import {WYSlidesManage} from "./wy-slides.manage";
 import {WYSlide} from "./wy-slide";
@@ -18,16 +17,25 @@ import {WYSlide} from "./wy-slide";
     template: `
         <div class="wy-slide-control-container">
             <ng-content></ng-content>
-        </div>`,
+        </div>`
 })
+
 export class WYSlides extends Ion implements AfterViewInit, OnDestroy {
 
+    //是否允许缩放
+    private _zoom: boolean = false;
+    private _padding: number;
 
     @Input() index: number = 0;
+
+    @Input() set padding(padding: number) {
+        this._padding = padding ? ~~padding : 0;
+    };
 
     @ContentChildren(WYSlide) slides: QueryList<WYSlide>;
     panGesture: WYSlidesGesture;
     slidesManage: WYSlidesManage;
+
 
     get zoomed() {
         for (let slide of this.slides.toArray()) {
@@ -36,6 +44,16 @@ export class WYSlides extends Ion implements AfterViewInit, OnDestroy {
             }
         }
         return false;
+    }
+
+    //是否允许缩放
+    @Input("zoom-able")
+    set zoomAble(zoom) {
+        this._zoom = zoom;
+    }
+
+    get zoomAble() {
+        return this._zoom;
     }
 
     getActiveSlide() {
@@ -56,15 +74,24 @@ export class WYSlides extends Ion implements AfterViewInit, OnDestroy {
             this.index,
             this.elementRef.nativeElement,
             this.renderer,
-            {padding: 20});
+            {padding: this._padding});
+
+        this._initZoom();
+    }
+
+    _initZoom() {
         this._zone.runOutsideAngular(() => {
             this.panGesture = new WYSlidesGesture(this._plt, this.slidesManage, this);
-            console.log('xxx')
         })
     }
 
+    _destroyZoom() {
+        this.panGesture && this.panGesture.destroy();
+        this.panGesture = null;
+    }
+
     ngOnDestroy(): void {
-        this.panGesture.destroy();
+        this._destroyZoom();
     }
 
 }

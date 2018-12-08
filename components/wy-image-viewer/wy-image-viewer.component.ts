@@ -22,7 +22,7 @@ import {WYSlides} from "../wy-slides/wy-slides";
                 </ion-buttons>
             </ion-navbar>
         </ion-header>
-        <wy-slides [index]="_index">
+        <wy-slides [zoom-able]="true" [padding]="20" [index]="_index">
             <wy-slide *ngFor="let srcUrl of _imageList">
                 <img [src]="srcUrl | safeRes"/>
             </wy-slide>
@@ -36,9 +36,9 @@ export class WYImageViewerComponent extends Ion implements OnDestroy, AfterViewI
     @ViewChild(WYSlides) slide: WYSlides;
 
     private unregisterBackButton: Function;
-    private _imageList: string[];
-    private _imageSrc: string;
-    private _index: number;
+    _imageList: string[];
+    _imageSrc: string;
+    _index: number;
 
     constructor(
         public _gestureCtrl: GestureController,

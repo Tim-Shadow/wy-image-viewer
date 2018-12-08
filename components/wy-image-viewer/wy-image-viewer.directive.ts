@@ -2,12 +2,12 @@ import {Directive, ElementRef, EventEmitter, HostListener, Input, Output} from "
 import {WYImageViewerController} from "./wy-image-viewer.controller";
 
 @Directive({
-    selector: '[wyImageViewer]'
+    selector: 'img[wyImageViewer]'
 })
 export class WYImageViewerDirective {
 
     @Input('wyImageViewer')
-    imageList: string;
+    imageList: string[];
 
     @Output()
     close = new EventEmitter();

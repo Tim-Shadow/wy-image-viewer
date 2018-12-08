@@ -35,7 +35,7 @@ export class WYImageViewerCloserGesture extends PanGesture {
         if (isPinching(ev)) {
             this.abort(ev);
         }
-        this.imageContainer = this.component.slide.getActiveSlide()._wrapper.nativeElement;
+        this.imageContainer = this.component.slide.getActiveSlide()._container.nativeElement;
         this.backdrop = <HTMLElement>this.component.getNativeElement().querySelector('ion-backdrop');
         let coord = pointerCoord(ev);
         this.startY = coord.y;
