@@ -25,7 +25,8 @@
     "minimatch": "^3.0.2",
     "rxjs": "^5.5.12",
     "typescript": "^2.3.4",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "lodash": ">=4.17.5"
   },
   "scripts": {
     "build": "gulp && tsc"
